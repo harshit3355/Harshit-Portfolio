@@ -38,7 +38,8 @@ const socialMediaLinks = {
   gmail: "harshitnagila3355@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
+  medium: "https://medium.com/@harshitnagila555",
+  // leetcode: "https://leetcode.com/harshitnagila555/",
   stackoverflow: "https://stackoverflow.com/users/23177952/harshit-nagila",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia

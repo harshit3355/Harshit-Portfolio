@@ -116,6 +116,7 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+
       {socialMediaLinks.kaggle ? (
         <a
           href={socialMediaLinks.kaggle}
