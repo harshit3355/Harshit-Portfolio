@@ -157,7 +157,7 @@ const techStack = {
   experience: [
     {
       Stack: "Cloud Platforms (Azure & AWS)", //Insert stack or technology you have experience in
-      progressPercentage: "85%%" //Insert relative proficiency in percentage
+      progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Infrastructure as Code (Terraform)",
