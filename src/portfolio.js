@@ -370,23 +370,23 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
+    "With Love for Doing cool stuff, I love to write and teach others what I have learnt.",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@harshitnagila555/mastering-kubernetes-as-a-devops-engineer-my-practical-guide-561fdcb8ec48",
+      title: "🚀 Mastering Kubernetes as a DevOps Engineer — My Practical Guide",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "From writing SQL and debugging production pipelines to managing Kubernetes clusters — here’s how I see the modern DevOps journey as a technical engineer."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@harshitnagila555/how-to-take-control-of-your-kubernetes-costs-monitor-right-size-govern-87ba9b129a05",
+      title: "💸 How to Take Control of Your Kubernetes Costs: Monitor, Right-Size & Govern",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Kubernetes cost optimization is not just about deleting unused resources — it’s about building a sustainable cost culture. Here’s how I approach it."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
