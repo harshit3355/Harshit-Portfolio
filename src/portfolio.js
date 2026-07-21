@@ -23,10 +23,10 @@ const greeting = {
   username: "Harshit Nagila",
   title: "Hi all, I'm Harshit",
   subTitle: emoji(
-    "A passionate DevOps Engineer 🚀 with 1.5 years of experience in automating infrastructure, optimizing CI/CD pipelines, and managing scalable systems. Proficient in Linux, AWS, Docker, Kubernetes, Terraform and Monitoring."
+    "A DevOps Engineer 🚀 who turns manual, fragile deployments into secure, automated pipelines. Over 2+ years across Azure and AWS, I've cut provisioning effort with Terraform, doubled deployment velocity with GitHub Actions, and shipped Zero Trust GenAI infrastructure to production."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/167PWkfPvOKmA5tARCFJaoZ-sBj5HPRcL/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1RvIE3Y-Lc9-8keitcfrdiUj4ihcjBoND/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
