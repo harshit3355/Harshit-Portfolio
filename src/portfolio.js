@@ -23,7 +23,7 @@ const greeting = {
   username: "Harshit Nagila",
   title: "Hi all, I'm Harshit",
   subTitle: emoji(
-    "A DevOps Engineer 🚀 who turns manual, fragile deployments into secure, automated pipelines. Over 2+ years across Azure and AWS, I've cut provisioning effort with Terraform, doubled deployment velocity with GitHub Actions, and shipped Zero Trust GenAI infrastructure to production."
+    "A DevOps & Cloud Infrastructure Engineer 🚀 with 3+ years building and operating cloud systems on Azure and AWS. I took an LLM-powered analytics platform from first environment to launch: 29 container apps, 85+ Terraform-managed resources per environment, approval-gated CI/CD, DevSecOps controls, SSO and continuous monitoring."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1RvIE3Y-Lc9-8keitcfrdiUj4ihcjBoND/view", // Set to empty to hide the button
@@ -50,25 +50,29 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "PROFICIENT DEVOPS ENGINEER FOCUSED ON CLOUD INFRASTRUCTURE AND AUTOMATION",
+  subTitle:
+    "DEVOPS & CLOUD INFRASTRUCTURE ENGINEER · AZURE · AWS · TERRAFORM · DEVSECOPS · AI PLATFORM INFRASTRUCTURE",
   skills: [
     emoji(
-      "⚡ Designing Zero-Trust cloud architectures with private networking, NAT gateways, and secure outbound access (Azure Front Door, Private Endpoints)"
+      "⚡ Running production workloads on Azure Container Apps, App Service and AWS ECS Fargate, fronted by Azure Front Door, WAF and API Management"
     ),
     emoji(
-      "⚡ Building scalable cloud infrastructure on Azure & AWS using Terraform, Container Apps, ECS Fargate and managed databases"
+      "⚡ Writing reusable, multi-environment Terraform modules so every environment can be recreated from code"
     ),
     emoji(
-      "⚡ Automating CI/CD pipelines using GitHub Actions & Jenkins with multi-environment deployment strategies (Dev → Staging → Prod)"
+      "⚡ Building approval-gated CI/CD in GitHub Actions and Azure DevOps (Dev → QA → Prod) with GitHub OIDC and SHA-pinned actions"
     ),
     emoji(
-      "⚡ Containerizing and orchestrating workloads using Docker and cloud-native services with security & compliance best practices"
+      "⚡ Baking DevSecOps into pipelines: Docker multi-stage builds with Trivy, SonarQube, Gitleaks, Bandit and Safety"
     ),
     emoji(
-      "⚡ Implementing observability & centralized monitoring using Azure Managed Grafana, Log Analytics & AWS CloudTrail"
+      "⚡ Hosting AI workloads: agent services on managed LLM APIs (Azure OpenAI, AWS Bedrock) with autoscaling and Key Vault secrets"
     ),
     emoji(
-      "⚡ Translating platform patterns across multi-cloud environments (AWS → Azure) for cloud-agnostic deployments"
+      "⚡ Monitoring and incident response with Azure Managed Grafana, Log Analytics, CloudWatch and CloudTrail, plus revision-based rollback"
+    ),
+    emoji(
+      "⚡ Identity and compliance: Microsoft Entra ID SSO (SAML), ISO 27001 evidence and SOC 2 preparation"
     )
   ],
 
@@ -94,7 +98,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Terraform",
-      fontAwesomeClassname: "faf fa-code"
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "Jenkins",
@@ -115,7 +119,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
+    }
     // {
     //   skillName: "Ansible",
     //   fontAwesomeClassname: "fab fa-ansible"
@@ -132,9 +136,9 @@ const educationInfo = {
     {
       schoolName: "Manipal University",
       logo: require("./assets/images/manipal-university-jaipur-logo.png"),
-      subHeader: "Masters in Computer Applications",
-      duration: "July 2024 - August 2026"
-      // desc: "Participated in the research of XXX and published 3 papers.",
+      subHeader: "Master of Computer Applications (part-time)",
+      duration: "July 2024 - July 2026",
+      desc: "CGPA 9.01"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -144,8 +148,8 @@ const educationInfo = {
       schoolName: "Chandigarh University",
       logo: require("./assets/images/Cu.png"),
       subHeader: "Bachelor in Computer Applications",
-      duration: "July 2021 - July 2024"
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      duration: "July 2021 - July 2024",
+      desc: "CGPA 8.53"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
@@ -165,15 +169,15 @@ const techStack = {
       progressPercentage: "80%"
     },
     {
-      Stack: "CI/CD & Automation (GitHub Actions, Jenkins)",
+      Stack: "CI/CD & Automation (GitHub Actions, Azure DevOps, Jenkins)",
       progressPercentage: "75%"
     },
     {
-      Stack: "Containers & Orchestration (Docker, ECS)",
+      Stack: "Containers & Orchestration (Docker, Kubernetes, ECS)",
       progressPercentage: "70%"
     },
     {
-      Stack: "Monitoring & Observability (Grafana, CloudTrail)",
+      Stack: "Monitoring & Observability (Grafana, Log Analytics, CloudWatch)",
       progressPercentage: "65%"
     },
     {
@@ -190,31 +194,31 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "DevOps Engineer",
+      role: "Associate DevOps Engineer",
       company: "CustomerInsights.AI",
       companylogo: require("./assets/images/CI_AI_asset.png"),
-      date: "June 2024 – Present",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "Aug 2024 – Present",
       descBullets: [
-        "Designed and implemented a Zero-Trust GenAI cloud platform using Azure Container Apps and Azure Front Door Premium, ensuring all AI workloads remained private via Private Endpoints.",
-        "Built and maintained modular Terraform code to provision enterprise cloud infrastructure including VNets, Container Environments, and database clusters, enabling consistent and repeatable deployments.",
-        "Engineered CI/CD pipelines using GitHub Actions to automate deployments across Dev, Staging, and Production environments, improving release reliability and reducing manual effort.",
-        "Designed centralized observability using Azure Managed Grafana backed by Azure Log Analytics, enabling real-time monitoring and faster issue resolution.",
-        "Implemented secure outbound connectivity using NAT Gateway to consume external APIs (Google Gemini) while maintaining strict internal network isolation.",
-        "Translated complex AWS architectures (ECS Fargate, CloudFront, Bedrock) into Azure-native implementations, demonstrating cloud-agnostic architectural expertise."
+        "Led the end-to-end build-out and go-live of ciATHENA, an agentic AI analytics application for life-sciences clients, as the sole DevOps engineer during the initial phases.",
+        "Fronted ciATHENA with Azure Front Door and Azure WAF, routing web and WebSocket traffic straight to the app for 10,000+ requests per day from 250+ distinct users (Front Door metrics); exposed backend APIs via Azure API Management and piloted Azure Application Gateway in a proof of concept.",
+        "Stood up 3 environments (development, QA and production) on Azure Container Apps hosting 29 container apps, including 2 ciATHENA versions and supporting tools, with development and QA scale rules that start frontends in about 10 seconds while backends stay always-on; contributed AWS deployment work on a separate Amazon ECS Fargate stack.",
+        "Authored reusable Terraform modules provisioning 85+ resources per environment, so each of the 3 environments can be recreated consistently from code rather than configured by hand.",
+        "Deployed 20+ side applications built in Node.js, Python and React to production on Azure App Service, alongside Logic Apps and Container Apps jobs, provisioning their infrastructure and CI/CD through GitHub Actions.",
+        "Designed a 3-stage release flow in GitHub Actions and Azure DevOps, with automatic deployment to development and approval gates before QA and production, and hardened its supply chain with GitHub OIDC instead of static keys, BuildKit secrets and SHA-pinned actions.",
+        "Standardized builds and security checks for every application shipped so far, ciATHENA included: Docker multi-stage builds and Docker Compose, with Trivy, SonarQube, Gitleaks, Bandit, Flake8 and Safety in the pipelines.",
+        "MLOps enablement: integrated the agent services with managed LLM APIs (Azure OpenAI, AWS Bedrock) and deployed them on Azure Container Apps and ECS Fargate with autoscaling rules and per-stage API credentials in Azure Key Vault.",
+        "Monitored production and resolved incidents with Azure Managed Grafana, Azure Log Analytics, AWS CloudWatch and CloudTrail, backed by automatic revision-based rollback in Azure Container Apps that keeps the last healthy revision serving traffic when a release fails.",
+        "Enabled Microsoft Entra ID SSO for both ciATHENA and GitHub Enterprise (SAML); compiled ISO 27001 evidence and contributed to SOC 2 preparation."
       ]
     },
     {
       role: "DevOps Engineer Intern",
       company: "Pearl Thoughts",
       companylogo: require("./assets/images/pearl_1.avif"),
-      date: "Jul 2024 – Jul 2024",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "Jul 2024",
       descBullets: [
-        "Developed and deployed applications using Strapi with fully automated CI/CD pipelines via GitHub Actions.",
-        "Provisioned cloud infrastructure dynamically using Terraform and deployed containerized workloads using Docker on AWS ECS Fargate.",
-        "Automated testing and deployment workflows to improve delivery speed and deployment consistency.",
-        "Gained hands-on experience with production-grade DevOps practices in a cloud-native environment."
+        "Engineered a multi-region Azure hub-and-spoke network: VNets, VNet peering, route tables with route propagation, network security groups, DNS zones and resource groups.",
+        "Provisioned virtual machines, enabled Log Analytics workspaces and VNet flow logs, and applied consistent tags throughout the Azure estate."
       ]
     },
     {
@@ -243,10 +247,10 @@ const workExperiences = {
       role: "Java Programmer",
       company: "Siyaraa Evolutions",
       companylogo: require("./assets/images/Siyara.png"),
-      date: "Jun 2023 – Jun 2023",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "Jun 2023",
       descBullets: [
-        "Orchestrated the development of three minor projects within a month."
+        "Packaged and shipped Java programs, maintaining dependencies and publishing artifacts to Nexus, with CI on 2 tools (GitHub Actions, CircleCI) and SonarQube code analysis.",
+        "Released small apps to AWS Elastic Beanstalk and Azure, tracking logs in AWS CloudWatch and Azure Log Analytics."
       ]
     },
     {
@@ -256,8 +260,8 @@ const workExperiences = {
       date: "Jul 2022 – Sep 2022",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Enhanced data accuracy by 40% and streamlined data workflow.",
-        "Performed ETL over Amazon Sales Data."
+        "Collaborated with the team on an event-driven AWS pipeline linking 5 components: S3 uploads triggered Lambda validation, EventBridge routed events, CloudWatch logged and alarmed, and SNS alerted the team.",
+        "Activated Amazon Macie and configured IAM access roles for the workflow."
       ]
     }
   ]
@@ -275,94 +279,131 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "INFRASTRUCTURE I HAVE BUILT IN THE OPEN",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "AWS ECS Platform Blueprint",
+      projectDesc:
+        "Terraform · ECS Fargate · GitHub Actions · Prometheus. A three-tier AWS VPC across 2 Availability Zones with ECS Fargate and RDS PostgreSQL, built from 4 lifecycle-based Terraform modules with isolated staging and prod stacks. 3 GitHub Actions workflows (CI, Terraform, CD) test, scan and deploy to staging, then gate production on human approval; Prometheus, Grafana and CloudWatch alarms to SNS.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/harshit3355/aws-ecs-platform-blueprint"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Wisecow Kubernetes TLS",
+      projectDesc:
+        "Docker · Kubernetes · cert-manager. A containerized Bash HTTP server deployed to Kubernetes with 5 manifests, fronted by NGINX Ingress with Let's Encrypt TLS issued and auto-renewed by cert-manager, removing manual certificate rotation.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/harshit3355/wisecow-kubernetes-tls"
+        }
+      ]
+    },
+    {
+      projectName: "Ansible Linux Lab",
+      projectDesc:
+        "Ansible · Nginx · Linux. An idempotent Ansible role for Nginx with validated handlers, 10-host batch rollouts and health checks.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/harshit3355/ansible-linux-lab"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications & Awards 🏆 "),
+  subtitle: "Certifications and recognition I have earned along the way",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "AWS Certified CloudOps Engineer – Associate",
+      subtitle: "Amazon Web Services · Sep 2026",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Verify",
+          url: "https://www.credly.com/badges/7b90c6a8-dfcb-4171-ab7c-8d6fbc4b7e18/linked_in_profile"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "HashiCorp Certified: Terraform Associate (004)",
+      subtitle: "HashiCorp",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Verify",
+          url: "https://www.credly.com/badges/741e0fc4-9acb-42c5-9562-7482f69ad33e/linked_in_profile"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "AWS Certified Cloud Practitioner",
+      subtitle: "Amazon Web Services",
       footerLink: [
-        { name: "Certification", url: "" },
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Verify",
+          url: "https://www.credly.com/badges/dbe80cbb-a56a-45bb-81c7-c2765607b45e/linked_in_profile"
         }
       ]
+    },
+    {
+      title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      subtitle: "Microsoft",
+      footerLink: [
+        {
+          name: "Verify",
+          url: "https://learn.microsoft.com/en-us/users/harshitnagila-3394/credentials/b8b55c8c66d9c35e"
+        }
+      ]
+    },
+    {
+      title: "Oracle Cloud Infrastructure Foundations",
+      subtitle: "Oracle",
+      footerLink: [
+        {
+          name: "Verify",
+          url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=C027BDDB1C28453473829BAF2D84B8D4F0143DC59DE8819500A2C37ED4790458"
+        }
+      ]
+    },
+    {
+      title: "Google Cloud Cybersecurity Professional",
+      subtitle: "Google",
+      footerLink: [
+        {
+          name: "Verify",
+          url: "https://www.coursera.org/account/accomplishments/specialization/V0QVD7LS7G6A"
+        }
+      ]
+    },
+    {
+      title: "DevOps for Enterprise Agility",
+      subtitle: "IBM",
+      footerLink: [
+        {
+          name: "Verify",
+          url: "https://www.credly.com/badges/2fd9e098-aee1-4b6b-b84c-290574834dd1/public_url"
+        }
+      ]
+    },
+    {
+      title: "Employee of the Quarter & Star Performer",
+      subtitle:
+        "CustomerInsights.AI · Employee of the Quarter (Q1 2025) and Star Performer (Mar 2025) for ciATHENA's launch.",
+      footerLink: []
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -375,13 +416,15 @@ const blogSection = {
   blogs: [
     {
       url: "https://medium.com/@harshitnagila555/mastering-kubernetes-as-a-devops-engineer-my-practical-guide-561fdcb8ec48",
-      title: "🚀 Mastering Kubernetes as a DevOps Engineer — My Practical Guide",
+      title:
+        "🚀 Mastering Kubernetes as a DevOps Engineer — My Practical Guide",
       description:
         "From writing SQL and debugging production pipelines to managing Kubernetes clusters — here’s how I see the modern DevOps journey as a technical engineer."
     },
     {
       url: "https://medium.com/@harshitnagila555/how-to-take-control-of-your-kubernetes-costs-monitor-right-size-govern-87ba9b129a05",
-      title: "💸 How to Take Control of Your Kubernetes Costs: Monitor, Right-Size & Govern",
+      title:
+        "💸 How to Take Control of Your Kubernetes Costs: Monitor, Right-Size & Govern",
       description:
         "Kubernetes cost optimization is not just about deleting unused resources — it’s about building a sustainable cost culture. Here’s how I approach it."
     }
