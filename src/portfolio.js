@@ -54,76 +54,61 @@ const skillsSection = {
     "DEVOPS & CLOUD INFRASTRUCTURE ENGINEER · AZURE · AWS · TERRAFORM · DEVSECOPS · AI PLATFORM INFRASTRUCTURE",
   skills: [
     emoji(
-      "⚡ Running production workloads on Azure Container Apps, App Service and AWS ECS Fargate, fronted by Azure Front Door, WAF and API Management"
+      "🚀 Taking platforms from first environment to go-live: led ciATHENA's launch as sole DevOps engineer, 29 container apps across dev, QA and prod on Azure Container Apps"
     ),
     emoji(
-      "⚡ Writing reusable, multi-environment Terraform modules so every environment can be recreated from code"
+      "🌐 Designing edge and networking: Azure Front Door + WAF serving 10,000+ requests/day, API Management, hub-and-spoke VNets with peering, NSGs and DNS zones"
     ),
     emoji(
-      "⚡ Building approval-gated CI/CD in GitHub Actions and Azure DevOps (Dev → QA → Prod) with GitHub OIDC and SHA-pinned actions"
+      "🏗️ Codifying everything in Terraform: reusable modules provisioning 85+ resources per environment, so any stage can be rebuilt from code"
     ),
     emoji(
-      "⚡ Baking DevSecOps into pipelines: Docker multi-stage builds with Trivy, SonarQube, Gitleaks, Bandit and Safety"
+      "🔁 Building release pipelines in GitHub Actions and Azure DevOps: auto-deploy to dev, approval gates before QA and prod, 20+ apps shipped"
     ),
     emoji(
-      "⚡ Hosting AI workloads: agent services on managed LLM APIs (Azure OpenAI, AWS Bedrock) with autoscaling and Key Vault secrets"
+      "🛡️ Shifting security left: GitHub OIDC instead of static keys, SHA-pinned actions, BuildKit secrets, and Trivy, SonarQube, Gitleaks, Bandit and Safety in every pipeline"
     ),
     emoji(
-      "⚡ Monitoring and incident response with Azure Managed Grafana, Log Analytics, CloudWatch and CloudTrail, plus revision-based rollback"
+      "🤖 Hosting AI workloads: agent services on Azure OpenAI and AWS Bedrock, autoscaled on Container Apps and ECS Fargate, credentials per stage in Key Vault"
     ),
     emoji(
-      "⚡ Identity and compliance: Microsoft Entra ID SSO (SAML), ISO 27001 evidence and SOC 2 preparation"
+      "📊 Keeping production healthy: Azure Managed Grafana, Log Analytics, CloudWatch and CloudTrail, with revision-based rollback when a release fails"
+    ),
+    emoji(
+      "🔐 Owning identity and compliance: Microsoft Entra ID SSO (SAML) for apps and GitHub Enterprise, ISO 27001 evidence and SOC 2 preparation"
+    ),
+    emoji(
+      "🎓 Sharing what I know: as GDSC Cloud Lead, taught 500+ students cloud through hands-on workshops"
     )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
+  // ponytail: Font Awesome 5.15.4 (public/index.html) has no Terraform/Ansible/Grafana brand icons, closest generic icons used
   softwareSkills: [
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Azure",
-      fontAwesomeClassname: "fab fa-microsoft"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-project-diagram"
-    },
-    {
-      skillName: "Terraform",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "Jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
-    },
-    {
-      skillName: "GitHub Actions",
-      fontAwesomeClassname: "fab fa-github"
-    },
-    {
-      skillName: "Sql-Database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    }
-    // {
-    //   skillName: "Ansible",
-    //   fontAwesomeClassname: "fab fa-ansible"
-    // }
+    {skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft"},
+    {skillName: "AWS", fontAwesomeClassname: "fab fa-aws"},
+    {skillName: "Terraform", fontAwesomeClassname: "fas fa-cubes"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "Kubernetes", fontAwesomeClassname: "fas fa-dharmachakra"},
+    {skillName: "Ansible", fontAwesomeClassname: "fas fa-cogs"},
+    {skillName: "GitHub Actions", fontAwesomeClassname: "fab fa-github"},
+    {skillName: "Azure DevOps", fontAwesomeClassname: "fas fa-infinity"},
+    {skillName: "Jenkins", fontAwesomeClassname: "fab fa-jenkins"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
+    {skillName: "Linux", fontAwesomeClassname: "fab fa-linux"},
+    {skillName: "Bash", fontAwesomeClassname: "fas fa-terminal"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "Java", fontAwesomeClassname: "fab fa-java"},
+    {skillName: "Node.js", fontAwesomeClassname: "fab fa-node-js"},
+    {skillName: "Nginx", fontAwesomeClassname: "fas fa-server"},
+    {skillName: "Networking", fontAwesomeClassname: "fas fa-network-wired"},
+    {skillName: "DevSecOps", fontAwesomeClassname: "fas fa-shield-alt"},
+    {skillName: "Key Vault", fontAwesomeClassname: "fas fa-key"},
+    {skillName: "Grafana", fontAwesomeClassname: "fas fa-chart-line"},
+    {skillName: "Databases", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "LLM Hosting", fontAwesomeClassname: "fas fa-robot"}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -161,27 +146,52 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Cloud Platforms (Azure & AWS)", //Insert stack or technology you have experience in
+      Stack: "☁️ Cloud Platforms (Azure & AWS)", //Insert stack or technology you have experience in
       progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Infrastructure as Code (Terraform)",
+      Stack: "🏗️ Infrastructure as Code (Terraform, modular multi-environment)",
       progressPercentage: "80%"
     },
     {
-      Stack: "CI/CD & Automation (GitHub Actions, Azure DevOps, Jenkins)",
+      Stack: "🔁 CI/CD & Automation (GitHub Actions, Azure DevOps, Jenkins)",
       progressPercentage: "75%"
     },
     {
-      Stack: "Containers & Orchestration (Docker, Kubernetes, ECS)",
+      Stack: "🛡️ DevSecOps (Trivy, SonarQube, Gitleaks, Bandit, GitHub OIDC)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "🌐 Networking & Edge (Front Door, WAF, APIM, VNets, peering)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "🐳 Containers & Orchestration (Docker, Kubernetes, ECS)",
       progressPercentage: "70%"
     },
     {
-      Stack: "Monitoring & Observability (Grafana, Log Analytics, CloudWatch)",
+      Stack: "🤖 AI Platform Hosting (Azure OpenAI, AWS Bedrock, Key Vault)",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "🐧 Linux & Configuration (Ansible, Nginx)",
+      progressPercentage: "70%"
+    },
+    {
+      Stack:
+        "📊 Monitoring & Observability (Grafana, Log Analytics, CloudWatch)",
       progressPercentage: "65%"
     },
     {
-      Stack: "Programming & Scripting (Python, Bash)",
+      Stack: "🔐 Identity & Compliance (Entra ID SSO/SAML, ISO 27001, SOC 2)",
+      progressPercentage: "65%"
+    },
+    {
+      Stack: "🐍 Programming & Scripting (Python, Bash, SQL, Java)",
+      progressPercentage: "60%"
+    },
+    {
+      Stack: "🗄️ Databases (PostgreSQL, Azure SQL, Cosmos DB, Redis)",
       progressPercentage: "60%"
     }
   ],
@@ -277,42 +287,91 @@ const openSource = {
 
 // Some big projects you have worked on
 
+const github = repo => [
+  {name: "View on GitHub", url: `https://github.com/harshit3355/${repo}`}
+];
+
 const bigProjects = {
   title: "Projects",
   subtitle: "INFRASTRUCTURE I HAVE BUILT IN THE OPEN",
   projects: [
     {
-      projectName: "AWS ECS Platform Blueprint",
+      projectName: emoji("🛡️ Policy Synapse"),
+      projectDesc:
+        "OPA/Rego · Gatekeeper · Terraform plan · Kubernetes · GitHub Actions. Checks that one governance rule means the same thing in CI, admission control, Terraform plans and at runtime, and fails the build when they diverge. Caught 708/708 injected policy drifts, where example-based tests caught 403.",
+      footerLink: github("policy-synapse")
+    },
+    {
+      projectName: emoji("🧭 TerraCog"),
+      projectDesc:
+        "Terraform · AWS CloudTrail · Python. Triages Terraform drift: links each drifted attribute to its CloudTrail actor and ticket, then recommends revert, codify, quarantine or page a human. Mean regret 0.5893 vs 2.75 for always-revert across 56 drift cases.",
+      footerLink: github("terracog")
+    },
+    {
+      projectName: emoji("🔗 Hephaestus Ledger"),
+      projectDesc:
+        "SLSA/in-toto · CycloneDX · OCI · GitHub OIDC · Terraform. Verifies that every live component of an AI deployment (image, SBOM, model config, infra, policy, identity) traces back to one approver-signed release. Found 19/19 injected provenance breaks vs 5/19 for a manual release manifest.",
+      footerLink: github("hephaestus-ledger")
+    },
+    {
+      projectName: emoji("🏗️ AWS ECS Platform Blueprint"),
       projectDesc:
         "Terraform · ECS Fargate · GitHub Actions · Prometheus. A three-tier AWS VPC across 2 Availability Zones with ECS Fargate and RDS PostgreSQL, built from 4 lifecycle-based Terraform modules with isolated staging and prod stacks. 3 GitHub Actions workflows (CI, Terraform, CD) test, scan and deploy to staging, then gate production on human approval; Prometheus, Grafana and CloudWatch alarms to SNS.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/harshit3355/aws-ecs-platform-blueprint"
-        }
-      ]
+      footerLink: github("aws-ecs-platform-blueprint")
     },
     {
-      projectName: "Wisecow Kubernetes TLS",
+      projectName: emoji("🏨 AWS ECS Terraform"),
+      projectDesc:
+        "Terraform · ECS Fargate · RDS PostgreSQL · ALB · GitHub Actions. Hotel-booking platform infrastructure (Internet → ALB → Fargate → RDS) with separate dev and prod environments, plus a local Postgres setup with migrations, seed data and self-checking backup/restore. Plans 57 resources for dev and 58 for prod.",
+      footerLink: github("aws-ecs-terraform")
+    },
+    {
+      projectName: emoji("⚖️ Titan Fleet"),
+      projectDesc:
+        "Python · SciPy LP · HPA-style autoscaling · Prometheus metrics. A cost- and SLO-aware router and autoscaler for LLM fleets mixing managed APIs (Azure OpenAI-like, Bedrock-like) with a self-hosted GPU pool. Total regret $1,314.65 vs $3,320.88 for static routing across 25 failure scenarios.",
+      footerLink: github("titan-fleet")
+    },
+    {
+      projectName: emoji("🔒 CI Pipeline Demo"),
+      projectDesc:
+        "CircleCI · Docker · Trivy · Ruff · Bandit · pip-audit · pytest. Gated CI for a Python service: linting, security scan, dependency audit and tests with an 80% coverage floor must pass before the image is built, smoke-tested, scanned and shipped with a CycloneDX SBOM.",
+      footerLink: github("ci-pipeline-demo")
+    },
+    {
+      projectName: emoji("💥 Chaos Witness"),
+      projectDesc:
+        "Python · HTTP fault-injection proxies · GitHub Actions. Generates chaos campaigns from an AI platform's assurance contract and judges each obligation from evidence the platform does not write itself. Caught 7/7 planted weaknesses vs 3/7 for HTTP-500-everywhere.",
+      footerLink: github("chaos-witness")
+    },
+    {
+      projectName: emoji("🩺 FaultWeaver"),
+      projectDesc:
+        "Python · AIOps / observability simulation. Gates automated root-cause fixes on independent telemetry evidence, running read-only probes or escalating when the evidence is thin. 11 unsafe remediations vs 29 for an ungated agent over 240 incidents.",
+      footerLink: github("faultweaver")
+    },
+    {
+      projectName: emoji("🪪 Aegis Nexus"),
+      projectDesc:
+        "Python · Ed25519/JWT · SPIFFE IDs · RFC 8693. Key-bound delegation chains for multi-cloud AI agents, where every hop can only narrow capabilities and lifetime. Leaked authority after a compromise: 7.06 weight-hours vs 242,782.01 for RFC 8693 token exchange.",
+      footerLink: github("aegis-nexus")
+    },
+    {
+      projectName: emoji("🌱 Carbon Oracle"),
+      projectDesc:
+        "Python · real GB grid carbon-intensity data. Places delay-tolerant AI jobs at the lowest-carbon region and start time under a probabilistic deadline bound. 8/800 deadline misses vs 101/800 without the bound.",
+      footerLink: github("carbon-oracle")
+    },
+    {
+      projectName: emoji("☸️ Wisecow Kubernetes TLS"),
       projectDesc:
         "Docker · Kubernetes · cert-manager. A containerized Bash HTTP server deployed to Kubernetes with 5 manifests, fronted by NGINX Ingress with Let's Encrypt TLS issued and auto-renewed by cert-manager, removing manual certificate rotation.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/harshit3355/wisecow-kubernetes-tls"
-        }
-      ]
+      footerLink: github("wisecow-kubernetes-tls")
     },
     {
-      projectName: "Ansible Linux Lab",
+      projectName: emoji("🐧 Ansible Linux Lab"),
       projectDesc:
         "Ansible · Nginx · Linux. An idempotent Ansible role for Nginx with validated handlers, 10-host batch rollouts and health checks.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/harshit3355/ansible-linux-lab"
-        }
-      ]
+      footerLink: github("ansible-linux-lab")
     }
   ],
   display: true // Set false to hide this section, defaults to true
